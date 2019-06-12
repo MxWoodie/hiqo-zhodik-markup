@@ -1,5 +1,5 @@
 .page-header {
-  background-color: $mako;
+  background-color: $color-background-primary;
 }
 
 .navigation-container {
@@ -17,24 +17,24 @@
     text-align: center;
     
     .navigation-item {
-      font-family: $raleway-light, $raleway-regular, $sans-serif;
+      font-family: $font-primary-light, $font-primary-regular, $font-secondary;
       font-size: 18px;
       text-transform: uppercase;
       text-decoration: none;
-      color: $alabaster;
+      color: $color-text-light;
 
       &.selected {
         position: relative;
       }
 
       &.selected::after {
-        content: '';
+        content: "";
         width: 4em;
         position: absolute;
         left: -0.5em;
         bottom: -5px;
         height: 1px;
-        background: linear-gradient(to right, $tamarillo, $red-orange);
+        background: linear-gradient(to right, $color-gradient-primary, $color-secondary);
       }
     }
 

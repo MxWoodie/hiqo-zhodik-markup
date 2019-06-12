@@ -1,0 +1,94 @@
+.slider-block {
+  background-color: $color-background-primary;
+}
+
+.slider-container {
+  padding-left: 100px;
+  padding-right: 100px;
+  
+  .slider-header {
+    font-family: $font-primary-semibold, $font-primary-regular, $font-secondary;
+    font-size: 70px;
+    padding-top: 140px;
+    color: $color-text-light;
+  }
+
+  .slider-description {
+    font-family: $font-primary-light, $font-primary-regular, $font-secondary;
+    font-size: 50px;
+    color: $color-text-light;
+  }
+
+  &::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    color: $color-arrow;
+    border-bottom: 6px solid;
+    border-left: 6px solid;
+    transform: rotate(45deg);
+    left: 2em;
+    bottom: 4em;
+
+  }
+
+  &::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    color: $color-arrow;
+    border-bottom: 6px solid;
+    border-left: 6px solid;
+    transform: rotate(-135deg);
+    right: 2em;
+    bottom: 4em;
+  }
+}
+
+.polyline {
+  stroke: $color-text-light; 
+  stroke-width: 0.5; 
+  fill: none;
+}
+
+.link-button {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-primary-semibold, $font-primary-regular, $font-secondary;
+  line-height: 50px;
+  width: 150px;
+  height: 50px;
+  color: $color-text-light;
+  border: 1px solid $color-text-light;
+  text-decoration: none;
+  margin: 50px 10px;
+  
+  &:hover {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+  }
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 104px;
+  padding-bottom: 23px;
+  max-width: 105px;
+  max-height: 25px;
+
+  .pagination {
+    box-sizing: border-box;
+    width: 23px;
+    height: 23px;
+    border: 2px solid $color-pagination-border;
+
+    &:hover {
+      background-color: $color-text-light;
+    }
+  }
+}
