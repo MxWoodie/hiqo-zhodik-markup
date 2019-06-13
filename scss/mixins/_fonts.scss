@@ -1,0 +1,7 @@
+@mixin font-semibold {
+  font-family: $font-primary-semibold, $font-primary-regular, $font-secondary;
+}
+
+@mixin font-light {
+  font-family: $font-primary-light, $font-primary-regular, $font-secondary;
+}

@@ -17,11 +17,11 @@
     text-align: center;
     
     .navigation-item {
-      font-family: $font-primary-light, $font-primary-regular, $font-secondary;
+      @include font-light;
       font-size: 18px;
       text-transform: uppercase;
       text-decoration: none;
-      color: $color-text-light;
+      color: $color-text-white;
 
       &.selected {
         position: relative;

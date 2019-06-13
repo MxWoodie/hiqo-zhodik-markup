@@ -7,16 +7,16 @@
   padding-right: 100px;
   
   .slider-header {
-    font-family: $font-primary-semibold, $font-primary-regular, $font-secondary;
+    @include font-semibold;
     font-size: 70px;
     padding-top: 140px;
-    color: $color-text-light;
+    color: $color-text-white;
   }
 
   .slider-description {
-    font-family: $font-primary-light, $font-primary-regular, $font-secondary;
+    @include font-light;
     font-size: 50px;
-    color: $color-text-light;
+    color: $color-text-white;
   }
 
   &::before {
@@ -48,7 +48,7 @@
 }
 
 .polyline {
-  stroke: $color-text-light; 
+  stroke: $color-text-white; 
   stroke-width: 0.5; 
   fill: none;
 }
@@ -57,12 +57,12 @@
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
-  font-family: $font-primary-semibold, $font-primary-regular, $font-secondary;
+  @include font-semibold;
   line-height: 50px;
   width: 150px;
   height: 50px;
-  color: $color-text-light;
-  border: 1px solid $color-text-light;
+  color: $color-text-white;
+  border: 1px solid $color-text-white;
   text-decoration: none;
   margin: 50px 10px;
   
@@ -88,7 +88,7 @@
     border: 2px solid $color-pagination-border;
 
     &:hover {
-      background-color: $color-text-light;
+      background-color: $color-text-white;
     }
   }
 }
