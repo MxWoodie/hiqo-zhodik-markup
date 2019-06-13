@@ -1,21 +1,48 @@
 .slider-block {
   background-color: $color-background-primary;
+  max-height: 783px;
+  min-height: 783px;
 }
 
 .slider-container {
-  padding: 11rem;
   position: relative;
+  padding: 187px 130px 0;
   
   .slider-header {
     @include font-semibold;
     font-size: 70px;
+    letter-spacing: 1px;
     color: $color-text-white;
   }
 
   .slider-description {
     @include font-light;
+    max-width: 960px;
+    padding-bottom: 57px;
+    letter-spacing: 0.5px;
+    line-height: 65px;
     font-size: 50px;
     color: $color-text-white;
+  }
+
+  .slider-button {
+    margin-left: 5px;
+  }
+
+  .slider-button + .slider-button {
+    margin-left: 15px;
+  }
+
+  .arrow.slider {
+    top: 6.5em;
+
+    &.left {
+      left: 0.8em;
+    }
+
+    &.right {
+      right: 0.8em;
+    }
   }
 }
 
@@ -28,16 +55,14 @@
 .pagination-container {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  padding-top: 104px;
-  padding-bottom: 23px;
+  margin: 140px auto 0;
   max-width: 105px;
   max-height: 25px;
 
   .pagination {
     box-sizing: border-box;
-    width: 23px;
-    height: 23px;
+    width: 22px;
+    height: 22px;
     border: 2px solid $color-pagination-border;
 
     &.active {

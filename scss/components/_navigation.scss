@@ -9,10 +9,9 @@
   max-width: 963px;
   max-height: 130px;
   margin: 0 auto;
-  padding-top: 22px;
+  padding-top: 14px;
 
   .navigation-item-container {
-    margin: 10px;
     text-align: center;
     
     .navigation-item {
@@ -47,10 +46,15 @@
     .navigation-item-logo {
       font-size: 32px;
       text-transform: capitalize;
+      align-self: flex-start;
+      padding-top: 10px;
 
       .logo {
         display: block;
-        margin: 0 auto 10px;
+        max-width: 50px;
+        max-height: 50px;
+        margin: 0 auto;
+        padding-bottom: 22px;
       }
     }
   }
