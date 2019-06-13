@@ -17,20 +17,27 @@
     
     .navigation-item {
       @include font-light;
+      position: relative;
       font-size: 18px;
       text-transform: uppercase;
       text-decoration: none;
       color: $color-text-white;
 
-      &.selected {
-        position: relative;
-      }
-
-      &.selected::after {
+      &:hover::before {
         content: "";
-        width: 4em;
+        width: 100%;
         position: absolute;
-        left: -0.5em;
+        left: 0;
+        bottom: -5px;
+        height: 1px;
+        background: linear-gradient(to right, $color-gradient-primary, $color-secondary);
+      }
+      
+      &.selected::before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        left: 0;
         bottom: -5px;
         height: 1px;
         background: linear-gradient(to right, $color-gradient-primary, $color-secondary);
