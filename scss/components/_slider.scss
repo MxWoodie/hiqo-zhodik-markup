@@ -3,13 +3,12 @@
 }
 
 .slider-container {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 11rem;
+  position: relative;
   
   .slider-header {
     @include font-semibold;
     font-size: 70px;
-    padding-top: 140px;
     color: $color-text-white;
   }
 
@@ -17,33 +16,6 @@
     @include font-light;
     font-size: 50px;
     color: $color-text-white;
-  }
-
-  &::before {
-    content: "";
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    color: $color-arrow;
-    border-bottom: 6px solid;
-    border-left: 6px solid;
-    transform: rotate(45deg);
-    left: 2em;
-    bottom: 4em;
-
-  }
-
-  &::after {
-    content: "";
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    color: $color-arrow;
-    border-bottom: 6px solid;
-    border-left: 6px solid;
-    transform: rotate(-135deg);
-    right: 2em;
-    bottom: 4em;
   }
 }
 
