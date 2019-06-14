@@ -21,24 +21,17 @@
       text-decoration: none;
       color: $color-text-white;
 
-      &:hover::before {
-        content: "";
-        width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        height: 1px;
-        background: linear-gradient(to right, $color-gradient-primary, $color-secondary);
-      }
-      
-      &.selected::before {
-        content: "";
-        width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        height: 1px;
-        background: linear-gradient(to right, $color-gradient-primary, $color-secondary);
+      &.selected,
+      &:hover {
+        &::before {
+          content: "";
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          height: 1px;
+          background: linear-gradient(to right, $color-gradient-primary, $color-secondary);
+        }
       }
     }
 
