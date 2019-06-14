@@ -1,0 +1,35 @@
+.paralax-block {
+  min-height: 923px;
+}
+
+.paralax-container {
+  position: relative;
+  min-height: 639px;
+  background-color: $color-background-paralax;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    border-bottom: 30px solid $color-background-paralax;
+    border-right: 30px solid transparent;
+    height: 0;
+    width: 705px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    border-top: 30px solid $color-background-paralax;
+    border-left: 30px solid transparent;
+    height: 0;
+    width: 705px;
+  }
+}
+
+.paralax-info-container {
+  min-height: 285px;
+  background-color: $color-paralax-info;
+}
