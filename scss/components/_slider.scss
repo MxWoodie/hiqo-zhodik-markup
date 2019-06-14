@@ -8,14 +8,14 @@
   padding: 187px 130px 0;
   
   .slider-header {
-    @include font-semibold;
+    @include font-primary-semibold;
     font-size: 70px;
     letter-spacing: 1px;
     color: $color-text-white;
   }
 
   .slider-description {
-    @include font-light;
+    @include font-primary-light;
     max-width: $slider-description-width;
     padding-bottom: 57px;
     letter-spacing: 0.5px;

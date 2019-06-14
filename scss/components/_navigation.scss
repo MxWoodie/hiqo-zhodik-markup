@@ -14,7 +14,7 @@
     text-align: center;
     
     .navigation-item {
-      @include font-light;
+      @include font-primary-light;
       position: relative;
       font-size: 18px;
       text-transform: uppercase;

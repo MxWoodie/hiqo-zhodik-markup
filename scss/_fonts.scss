@@ -15,3 +15,21 @@
   src: url(/assets/fonts/Raleway-SemiBold.ttf) format("truetype");
   font-weight: 600;
 }
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(/assets/fonts/OpenSans-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url(/assets/fonts/OpenSans-Light.ttf) format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "OpenSans-LightItalic";
+  src: url(/assets/fonts/OpenSans-LightItalic.ttf) format("truetype");
+  font-weight: 300;
+}
