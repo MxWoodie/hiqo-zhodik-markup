@@ -16,7 +16,7 @@
 
   .slider-description {
     @include font-light;
-    max-width: 960px;
+    max-width: $slider-description-width;
     padding-bottom: 57px;
     letter-spacing: 0.5px;
     line-height: 65px;
@@ -55,8 +55,7 @@
   display: flex;
   justify-content: space-between;
   margin: 140px auto 0;
-  max-width: 105px;
-  max-height: 25px;
+  max-width: $pagination-container-width;
 
   .pagination {
     box-sizing: border-box;
