@@ -15,4 +15,8 @@
   &.right {
     right: 0;
   }
+
+  &:hover {
+    color: $color-secondary;
+  }
 }
