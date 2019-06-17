@@ -45,14 +45,17 @@
   padding: 92px 125px 0;
 
   .arrow.blog {
-    top: 49%;
+    top: 350px;
+    width: 27px; 
+    height: 27px;
+    border-width: 3px 0 0 3px;
 
     &.left {
-      left: 35px;
+      left: 43px;
     }
 
     &.right {
-      right: 35px;
+      right: 43px;
     }
   }
 }

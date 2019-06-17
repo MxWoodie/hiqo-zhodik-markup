@@ -1,19 +1,19 @@
 .arrow {
   cursor: pointer;
   position: absolute;
-  width: auto;
-  color: $color-arrow;
-  font-weight: 100;
-  font-size: 48px;
-  user-select: none;
-  text-decoration: none;
+  width: 20px; 
+  height: 20px;
+  border-top: 2px solid $color-arrow;
+  border-left: 2px solid $color-arrow;
 
   &.left {
     left: 0;
+    transform: rotate(-45deg);
   }
 
   &.right {
     right: 0;
+    transform: rotate(135deg);
   }
 
   &:hover {
