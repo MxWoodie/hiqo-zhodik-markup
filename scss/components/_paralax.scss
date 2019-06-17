@@ -1,0 +1,130 @@
+.paralax-block {
+  min-height: 923px;
+}
+
+.paralax-container {
+  position: relative;
+  min-height: 639px;
+  background-color: $color-background-paralax;
+
+  .paralax-header {
+    @include font-primary-semibold;
+    position: relative;
+    color: $color-text-white;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 144px;
+
+    &::after {
+      content: "";
+          width: 100px;
+          position: absolute;
+          left: 670px;
+          bottom: -20px;
+          height: 1px;
+          background-color: $color-text-white;
+    }
+  }
+
+  .paralax-description {
+    @include font-secondary-regular;
+    font-size: 18px;
+    padding-top: 40px;
+    color: $color-text-white;
+    text-align: center;
+  }
+
+  .paralax-blockquote-container {
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-left: 38px;
+    letter-spacing: 0.4px;
+    max-width: $blockquote-container-width;
+
+    .paralax-blockquote-text {
+      @include font-secondary-light-italic;
+      max-width: 890px;
+      font-size: 30px;
+      line-height: 40px;
+      color: $color-text-white;
+
+      &::before {
+        content: "\201c";
+        font-family: 'Times New Roman', Times, serif;
+        position: absolute;
+        font-size: 150px;
+        top: 342px;
+        left: 250px;
+        opacity: 0.2;
+        color: $color-text-white;
+      }
+    }
+
+    .paralax-blockquote-author {
+      @include font-secondary-light;
+      font-size: 30px;
+      padding-top: 46px;
+      color: $color-text-white;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    border-bottom: 30px solid $color-background-paralax;
+    border-right: 30px solid transparent;
+    height: 0;
+    width: $paralax-shape-width;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    border-top: 30px solid $color-background-paralax;
+    border-left: 30px solid transparent;
+    height: 0;
+    width: $paralax-shape-width;
+  }
+}
+
+.paralax-info-block {
+  min-height: 285px;
+  background-color: $color-paralax-info;
+
+  .paralax-info-container {
+    padding: 92px 110px 0;
+
+    .paralax-info-item {
+      position: relative;
+      float: left;
+      padding: 0 50px;
+      min-width: 204px;
+      min-height: 98px;
+
+      .info-item-img {
+        float: left;
+      }
+      
+      .info-item-count {
+        @include font-primary-regular;
+        float: left;
+        padding-left: 30px;
+        color: $color-text-white;
+        font-size: 40px;
+      }
+
+      .info-item-description {
+        @include font-primary-light;
+        position: absolute;
+        color: $color-text-white;
+        font-size: 25px;
+        clear: both;
+        bottom: 0;
+        right: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.page-header {
+  background-color: $color-background-primary;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $navigation-width;
+  margin: 0 auto;
+  padding-top: 14px;
+
+  .navigation-item-container {
+    text-align: center;
+    
+    .navigation-item {
+      @include font-primary-light;
+      position: relative;
+      font-size: 18px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $color-text-white;
+
+      &.selected,
+      &:hover {
+        &::before {
+          content: "";
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          height: 1px;
+          background: linear-gradient(to right, $color-gradient-primary, $color-secondary);
+        }
+      }
+    }
+
+    .navigation-item-logo {
+      font-size: 32px;
+      text-transform: capitalize;
+      align-self: flex-start;
+      padding-top: 10px;
+
+      .logo {
+        display: block;
+        max-width: 50px;
+        max-height: 50px;
+        margin: 0 auto;
+        padding-bottom: 22px;
+      }
+    }
+  }
+}

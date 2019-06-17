@@ -1,0 +1,74 @@
+.slider-block {
+  background-color: $color-background-primary;
+  min-height: 783px;
+}
+
+.slider-container {
+  position: relative;
+  padding: 187px 130px 0;
+  
+  .slider-header {
+    @include font-primary-semibold;
+    font-size: 70px;
+    letter-spacing: 1px;
+    color: $color-text-white;
+  }
+
+  .slider-description {
+    @include font-primary-light;
+    max-width: $slider-description-width;
+    padding-bottom: 57px;
+    letter-spacing: 0.5px;
+    line-height: 65px;
+    font-size: 50px;
+    color: $color-text-white;
+  }
+
+  .slider-button {
+    margin-left: 5px;
+  }
+
+  .slider-button + .slider-button {
+    margin-left: 15px;
+  }
+
+  .arrow.slider {
+    top: 310px;
+
+    &.left {
+      left: 35px;
+    }
+
+    &.right {
+      right: 35px;
+    }
+  }
+}
+
+.polyline {
+  stroke: $color-text-white;
+  stroke-width: 0.5;
+  fill: none;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 140px auto 0;
+  max-width: $pagination-container-width;
+
+  .pagination {
+    box-sizing: border-box;
+    width: 22px;
+    height: 22px;
+    border: 2px solid $color-pagination-border;
+
+    &.active {
+      background-color: $color-text-white;
+    }
+
+    &:hover {
+      background-color: $color-text-white;
+    }
+  }
+}

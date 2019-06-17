@@ -1,0 +1,23 @@
+@mixin font-primary-regular {
+  font-family: $font-primary-regular, $font-spare;
+}
+
+@mixin font-primary-semibold {
+  font-family: $font-primary-semibold, $font-primary-regular, $font-spare;
+}
+
+@mixin font-primary-light {
+  font-family: $font-primary-light, $font-primary-regular, $font-spare;
+}
+
+@mixin font-secondary-regular {
+  font-family: $font-primary-regular, $font-spare;
+}
+
+@mixin font-secondary-light {
+  font-family: $font-secondary-light, $font-primary-regular, $font-spare;
+}
+
+@mixin font-secondary-light-italic {
+  font-family: $font-secondary-light-italic, $font-secondary-light, $font-spare;
+}
