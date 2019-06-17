@@ -42,10 +42,10 @@
 .blog-posts-block {
   position: relative;
   margin: 0 auto;
-  padding: 0 125px;
+  padding: 92px 125px 0;
 
   .arrow.blog {
-    top: 340px;
+    top: 49%;
 
     &.left {
       left: 35px;
@@ -58,21 +58,24 @@
 }
 
 .blog-posts-container {
+  width: 100%;
+  position: relative;
+  font-size: 0;
 
   .blog-post {
     display: inline-block;
     vertical-align: top;
-    max-width: $post-width;
+    box-sizing: content-box;
+    width: 33%;
     height: 611px;
     border: 1px solid $color-post-border;
     border-top: 0;
     border-top-right-radius: 40px;
-    margin: 92px 11px 0;
   }
 
   .post-img {
     position: relative;
-    width: 370px;
+    width: 100%;
     height: 246px;
     background-color: $color-paralax-info;
 
@@ -83,7 +86,7 @@
       right: 0;
       border-top: 39px solid white;
       border-left: 36px solid transparent;
-      width: 167px;
+      width: 46%;
     }
   }
 
@@ -149,6 +152,11 @@
       color: $color-secondary;
       margin-top: 19px;
       margin-left: 7px;
+      font-size: 16px;
+
+      &:hover {
+        color: $color-text-white;
+      }
     }
   }
 }
