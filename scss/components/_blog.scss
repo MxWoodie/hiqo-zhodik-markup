@@ -1,5 +1,7 @@
 .blog-block {
   min-height: 1067px;
+  max-width: $page-width;
+  margin: 0 auto;
 }
 
 .blog-header {

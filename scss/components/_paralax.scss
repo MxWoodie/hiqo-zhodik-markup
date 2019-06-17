@@ -1,11 +1,39 @@
 .paralax-block {
   min-height: 923px;
+  background-color: $color-background-paralax;
+}
+
+.paralax-block-shapes {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    border-bottom: 30px solid $color-background-paralax;
+    border-right: 30px solid transparent;
+    height: 0;
+    width: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    border-top: 30px solid $color-background-paralax;
+    border-left: 30px solid transparent;
+    height: 0;
+    z-index: 1;
+    width: 50%;
+  }
 }
 
 .paralax-container {
   position: relative;
   min-height: 639px;
-  background-color: $color-background-paralax;
+  max-width: $page-width;
+  margin: 0 auto;
 
   .paralax-header {
     @include font-primary-semibold;
@@ -67,27 +95,6 @@
       color: $color-text-white;
     }
   }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    border-bottom: 30px solid $color-background-paralax;
-    border-right: 30px solid transparent;
-    height: 0;
-    width: $paralax-shape-width;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    right: 0;
-    border-top: 30px solid $color-background-paralax;
-    border-left: 30px solid transparent;
-    height: 0;
-    width: $paralax-shape-width;
-  }
 }
 
 .paralax-info-block {
@@ -95,14 +102,18 @@
   background-color: $color-paralax-info;
 
   .paralax-info-container {
-    padding: 92px 110px 0;
+    padding-top: 92px;
+    padding-left: 200px;
+    max-width: $page-width;
+    margin: 0 auto;
 
     .paralax-info-item {
       position: relative;
+      box-sizing: content-box;
       float: left;
-      padding: 0 50px;
       min-width: 204px;
       min-height: 98px;
+      padding: 0 50px;
 
       .info-item-img {
         float: left;
@@ -123,7 +134,7 @@
         font-size: 25px;
         clear: both;
         bottom: 0;
-        right: 40px;
+        right: 20px;
       }
     }
   }
