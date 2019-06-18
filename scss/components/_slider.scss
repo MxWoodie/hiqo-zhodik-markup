@@ -5,42 +5,49 @@
 
 .slider-container {
   position: relative;
-  padding: 187px 130px 0;
-  
-  .slider-header {
-    @include font-primary-semibold;
-    font-size: 70px;
-    letter-spacing: 1px;
-    color: $color-text-white;
-  }
+  padding-top: 187px;
+  max-width: $page-width;
+  height: 100%;
+  margin: 0 auto;
 
-  .slider-description {
-    @include font-primary-light;
-    max-width: $slider-description-width;
-    padding-bottom: 57px;
-    letter-spacing: 0.5px;
-    line-height: 65px;
-    font-size: 50px;
-    color: $color-text-white;
-  }
+  .slider-container-text {
+    padding: 0 130px;
 
-  .slider-button {
-    margin-left: 5px;
-  }
+    .slider-header {
+      @include font-primary-semibold;
+      font-size: 70px;
+      letter-spacing: 1px;
+      color: $color-text-white;
+    }
 
-  .slider-button + .slider-button {
-    margin-left: 15px;
+    .slider-description {
+      @include font-primary-light;
+      max-width: $slider-description-width;
+      padding-bottom: 57px;
+      letter-spacing: 0.5px;
+      line-height: 65px;
+      font-size: 50px;
+      color: $color-text-white;
+    }
+
+    .slider-button {
+      margin-left: 5px;
+    }
+
+    .slider-button + .slider-button {
+      margin-left: 15px;
+    }
   }
 
   .arrow.slider {
-    top: 310px;
+    top: 322px;
 
     &.left {
-      left: 35px;
+      left: 45px;
     }
 
     &.right {
-      right: 35px;
+      right: 45px;
     }
   }
 }
