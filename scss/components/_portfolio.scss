@@ -1,0 +1,93 @@
+.portfolio-container {
+  max-width: $page-width;
+  margin: 0 auto;
+}
+
+.portfolio-header {
+  @include font-primary-semibold;
+  position: relative;
+  font-size: 45px;
+  color: $color-text-black;
+  text-align: center;
+  padding-top: 94px;
+
+  &::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: -29px;
+    height: 1px;
+    background: linear-gradient(to right, $color-secondary, $color-gradient-primary);
+  }
+}
+
+.portfolio-projects-container {
+  padding-top: 150px;
+  font-size: 0;
+
+  .portfolio-project {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    height: 240px;
+    background-color: $color-paralax-info;
+    border: 1px solid $color-project-border;
+    box-sizing: border-box;
+
+    .portfolio-project-title {
+      @include font-secondary-semibold;
+      font-size: 20px;
+      color: $color-text-white;
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 20px;
+    }
+
+    .portfolio-project-description {
+      @include font-secondary-regular;
+      font-size: 15px;
+      color: $color-text-white;
+      text-align: center;
+    }
+
+    .portfolio-project-actionbar-block {
+      position: absolute;
+      background-color: $color-project-actionbar-background;
+      height: 75px;
+      width: 100%;
+      bottom: 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        border-top: 38px solid $color-paralax-info;
+        border-right: 35px solid transparent;
+        height: 0;
+        width: 162px;
+      }
+
+      .portfolio-project-actionbar-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+        padding-top: 30px;
+        padding-left: 200px;
+
+        .portfolio-project-action {
+          cursor: pointer;
+          width: 23px;
+          height: 22px;
+
+          &:hover {
+            filter: grayscale(100%) brightness(300%) sepia(100%) 
+            hue-rotate(-50deg) saturate(600%) contrast(0.8);
+          }
+        }
+      }
+    }
+  }
+}

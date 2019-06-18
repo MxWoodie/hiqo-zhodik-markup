@@ -1,0 +1,26 @@
+.page-footer {
+  background-color: $color-footer-background;
+}
+
+.footer-container {
+  max-width: $page-width;
+  margin: 0 auto;
+
+  .footer-social-block {
+    display: inline-block;
+
+    .footer-social-links {
+      display: flex;
+      justify-content: space-between;
+      width: 264px;
+    }
+  }
+
+  .footer-logo {
+    display: inline-block;
+  }
+
+  .footer-copyright {
+    display: inline-block;
+  }
+}

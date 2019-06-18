@@ -1,5 +1,4 @@
 .paralax-block {
-  min-height: 923px;
   background-color: $color-background-paralax;
 }
 
@@ -31,7 +30,6 @@
 
 .paralax-container {
   position: relative;
-  min-height: 639px;
   max-width: $page-width;
   margin: 0 auto;
 
@@ -112,8 +110,7 @@
     .paralax-info-item {
       box-sizing: content-box;
       float: left;
-      min-width: 204px;
-      min-height: 98px;
+      width: 25%;
       padding: 0 50px;
 
       .info-item-img {

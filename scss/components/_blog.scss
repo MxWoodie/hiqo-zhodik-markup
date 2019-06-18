@@ -1,5 +1,4 @@
 .blog-block {
-  min-height: 1067px;
   max-width: $page-width;
   margin: 0 auto;
 }
@@ -11,6 +10,7 @@
   color: $color-text-black;
   text-align: center;
   padding-top: 94px;
+  text-transform: capitalize;
 
   &::after {
     content: "";
@@ -102,24 +102,14 @@
       position: relative;
       font-size: 25px;
       line-height: 29px;
-      padding: 0 6px;
+      padding-bottom: 15px;
       letter-spacing: 0.4px;
       color: $color-text-black;
+      border-bottom: 1px solid $color-post-title-underscore;
 
       &:hover {
         cursor: pointer;
         color: $color-secondary;
-      }
-
-      &::after {
-        content: "";
-          width: 320px;
-          position: absolute;
-          left: 2px;
-          bottom: -12px;
-          height: 1px;
-          background-color: $color-pagination-border;
-          opacity: 0.4;
       }
     }
 
