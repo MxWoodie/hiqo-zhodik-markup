@@ -65,6 +65,7 @@
   max-width: $pagination-container-width;
 
   .pagination {
+    cursor: pointer;
     box-sizing: border-box;
     width: 22px;
     height: 22px;
