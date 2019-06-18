@@ -47,7 +47,9 @@
       content: "";
       width: 100px;
       position: absolute;
-      left: 670px;
+      right: 0;
+      left: 0;
+      margin: auto;
       bottom: -20px;
       height: 1px;
       background-color: $color-text-white;
@@ -108,7 +110,6 @@
     margin: 0 auto;
 
     .paralax-info-item {
-      position: relative;
       box-sizing: content-box;
       float: left;
       min-width: 204px;
@@ -129,12 +130,9 @@
 
       .info-item-description {
         @include font-primary-light;
-        position: absolute;
         color: $color-text-white;
         font-size: 25px;
         clear: both;
-        bottom: 0;
-        right: 20px;
       }
     }
   }
