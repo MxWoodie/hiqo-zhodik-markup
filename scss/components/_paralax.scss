@@ -92,26 +92,27 @@
       @include font-secondary-light;
       font-size: 30px;
       padding-top: 46px;
+      padding-bottom: 158px;
       color: $color-text-white;
     }
   }
 }
 
 .paralax-info-block {
-  min-height: 285px;
   background-color: $color-paralax-info;
 
   .paralax-info-container {
     padding-top: 92px;
-    padding-left: 200px;
-    max-width: $page-width;
+    padding-bottom: 191px;
+    padding-left: 78px;
+    max-width: 1200px;
     margin: 0 auto;
+    font-size: 0;
 
     .paralax-info-item {
-      box-sizing: content-box;
       float: left;
+      box-sizing: border-box;
       width: 25%;
-      padding: 0 50px;
 
       .info-item-img {
         float: left;
@@ -120,8 +121,8 @@
       .info-item-count {
         @include font-primary-regular;
         float: left;
-        padding-left: 30px;
         color: $color-text-white;
+        margin-left: 28px;
         font-size: 40px;
       }
 
@@ -130,6 +131,8 @@
         color: $color-text-white;
         font-size: 25px;
         clear: both;
+        margin-top: 70px;
+        margin-left: 73px;
       }
     }
   }
