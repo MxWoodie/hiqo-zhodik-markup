@@ -8,6 +8,9 @@
 
   .footer-social-block {
     display: inline-block;
+    vertical-align: top;
+    margin-left: 140px;
+    margin-top: 60px;
 
     .footer-social-links {
       display: flex;
@@ -17,10 +20,31 @@
   }
 
   .footer-logo {
+    @include font-primary-light;
     display: inline-block;
+    font-size: 32px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: $color-text-white;
+    margin-left: 265px;
+    margin-top: 22px;
+    margin-bottom: 40px;
+
+    .footer-logo-img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 22px;
+    }
   }
 
   .footer-copyright {
+    @include font-secondary-light;
+    vertical-align: top;
+    font-size: 14px;
+    color: $color-post-border;
     display: inline-block;
+    margin-top: 69px;
+    margin-left: 173px;
   }
 }
