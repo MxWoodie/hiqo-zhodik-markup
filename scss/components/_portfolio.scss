@@ -1,6 +1,6 @@
 .portfolio-container {
   max-width: $page-width;
-  margin: 0 auto;
+  margin: 52px auto;
 }
 
 .portfolio-header {
@@ -9,7 +9,6 @@
   font-size: 45px;
   color: $color-text-black;
   text-align: center;
-  padding-top: 94px;
 
   &::after {
     content: "";
@@ -18,14 +17,14 @@
     right: 0;
     left: 0;
     margin: auto;
-    bottom: -29px;
+    bottom: -22px;
     height: 1px;
     background: linear-gradient(to right, $color-secondary, $color-gradient-primary);
   }
 }
 
 .portfolio-projects-container {
-  padding-top: 150px;
+  margin-top:120px;
   font-size: 0;
 
   .portfolio-project {
@@ -42,8 +41,9 @@
       font-size: 20px;
       color: $color-text-white;
       text-align: center;
-      padding-top: 60px;
-      padding-bottom: 20px;
+      margin-top: 45px;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
     }
 
     .portfolio-project-description {
@@ -51,6 +51,7 @@
       font-size: 15px;
       color: $color-text-white;
       text-align: center;
+      letter-spacing: 0.3px;
     }
 
     .portfolio-project-actionbar-block {
