@@ -74,6 +74,7 @@
         @include font-secondary-light-italic;
         position: absolute;
         font-size: 15px;
+        padding-left: 20px;
       }
 
       &.name-input,
@@ -82,7 +83,7 @@
         display: inline-block;
         box-sizing: border-box;
         width: calc(50% - 15px);
-        padding-top: 30px;
+        line-height: 46px;
         padding-right: 198px;
         margin-bottom: 30px;
       }
@@ -96,7 +97,7 @@
         display: block;
         box-sizing: border-box;
         width: 100%;
-        padding-top: 30px;
+        line-height: 46px;
         margin-bottom: 30px;
       }
 
