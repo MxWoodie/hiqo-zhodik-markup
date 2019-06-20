@@ -1,1 +1,5 @@
-$screen-small: 768px;
+$breakpoints: ( x-large: 1200px, large: 992px, medium: 768px, small: 576px );
+$screen-small: 576px;
+$screen-medium: 768px;
+$screen-large: 992px;
+$screen-x-large: 1200px;
