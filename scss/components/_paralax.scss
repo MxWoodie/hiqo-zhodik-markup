@@ -1,5 +1,4 @@
 .paralax-block {
-  min-height: 923px;
   background-color: $color-background-paralax;
 }
 
@@ -31,7 +30,6 @@
 
 .paralax-container {
   position: relative;
-  min-height: 639px;
   max-width: $page-width;
   margin: 0 auto;
 
@@ -47,7 +45,9 @@
       content: "";
       width: 100px;
       position: absolute;
-      left: 670px;
+      right: 0;
+      left: 0;
+      margin: auto;
       bottom: -20px;
       height: 1px;
       background-color: $color-text-white;
@@ -92,28 +92,27 @@
       @include font-secondary-light;
       font-size: 30px;
       padding-top: 46px;
+      padding-bottom: 158px;
       color: $color-text-white;
     }
   }
 }
 
 .paralax-info-block {
-  min-height: 285px;
   background-color: $color-paralax-info;
 
   .paralax-info-container {
     padding-top: 92px;
-    padding-left: 200px;
-    max-width: $page-width;
+    padding-bottom: 191px;
+    padding-left: 78px;
+    max-width: 1200px;
     margin: 0 auto;
+    font-size: 0;
 
     .paralax-info-item {
-      position: relative;
-      box-sizing: content-box;
       float: left;
-      min-width: 204px;
-      min-height: 98px;
-      padding: 0 50px;
+      box-sizing: border-box;
+      width: 25%;
 
       .info-item-img {
         float: left;
@@ -122,19 +121,18 @@
       .info-item-count {
         @include font-primary-regular;
         float: left;
-        padding-left: 30px;
         color: $color-text-white;
+        margin-left: 28px;
         font-size: 40px;
       }
 
       .info-item-description {
         @include font-primary-light;
-        position: absolute;
         color: $color-text-white;
         font-size: 25px;
         clear: both;
-        bottom: 0;
-        right: 20px;
+        margin-top: 70px;
+        margin-left: 73px;
       }
     }
   }

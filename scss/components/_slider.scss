@@ -1,11 +1,11 @@
 .slider-block {
   background-color: $color-background-primary;
-  min-height: 783px;
 }
 
 .slider-container {
   position: relative;
-  padding-top: 187px;
+  padding-top: 180px;
+  padding-bottom: 60px;
   max-width: $page-width;
   height: 100%;
   margin: 0 auto;
@@ -23,7 +23,7 @@
     .slider-description {
       @include font-primary-light;
       max-width: $slider-description-width;
-      padding-bottom: 57px;
+      padding-bottom: 55px;
       letter-spacing: 0.5px;
       line-height: 65px;
       font-size: 50px;
@@ -40,7 +40,7 @@
   }
 
   .arrow.slider {
-    top: 322px;
+    top: 50%;
 
     &.left {
       left: 45px;
@@ -61,10 +61,12 @@
 .pagination-container {
   display: flex;
   justify-content: space-between;
-  margin: 140px auto 0;
+  margin: 80px auto 0;
   max-width: $pagination-container-width;
+  padding-bottom: 62px;
 
   .pagination {
+    cursor: pointer;
     box-sizing: border-box;
     width: 22px;
     height: 22px;

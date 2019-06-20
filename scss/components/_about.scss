@@ -1,0 +1,117 @@
+.about-block {
+  max-width: $page-width;
+  margin: 150px auto 64px;
+}
+
+.about-container {
+  margin-left: 135px;
+}
+
+.about-title {
+  @include font-primary-regular;
+  letter-spacing: 0.4px;
+  font-size: 45px;
+  position: relative;
+  color: $color-text-black;
+
+  &::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    height: 1px;
+    background: linear-gradient(to right, $color-secondary, $color-gradient-primary);
+  }
+}
+
+.about-description {
+  @include font-secondary-regular;
+  font-size: 18px;
+  color: $color-text-black;
+  margin-top: 35px;
+}
+
+.about-contact {
+  font-size: 0;
+  margin-top: 50px;
+  margin-left: 29px;
+
+  .contact-info-container {
+    display: inline-block;
+
+    .contact-info {
+      margin-bottom: 80px;
+
+      .contact-info-img {
+        display: inline-block;
+      }
+
+      .contact-info-text {
+        @include font-secondary-regular;
+        font-size: 14px;
+        display: inline-block;
+        margin-left: 65px;
+        line-height: 24px;
+
+        &.mail-info {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 115px;
+    margin-top: 28px;
+
+    .contact-form-input {
+      position: relative;
+
+      &::placeholder {
+        @include font-secondary-light-italic;
+        position: absolute;
+        font-size: 15px;
+        padding-left: 20px;
+      }
+
+      &.name-input,
+      &.mail-input {
+        @include fading-border;
+        display: inline-block;
+        box-sizing: border-box;
+        width: calc(50% - 15px);
+        line-height: 46px;
+        padding-right: 198px;
+        margin-bottom: 30px;
+      }
+
+      &.name-input {
+        margin-right: 30px;
+      }
+
+      &.subject-input {
+        @include fading-border;
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        line-height: 46px;
+        margin-bottom: 30px;
+      }
+
+      &.textarea-input {
+        @include fading-border;
+        display: block;
+        width: 100%;
+        resize: none;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+.line-break {
+  display: block;
+}

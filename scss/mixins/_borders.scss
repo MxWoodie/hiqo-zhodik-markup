@@ -1,0 +1,5 @@
+@mixin fading-border {
+  border-image-source: linear-gradient(white, $color-pagination-border);
+  border-width: 1px;
+  border-image-slice: 1;
+}

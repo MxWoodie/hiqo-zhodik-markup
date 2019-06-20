@@ -8,10 +8,10 @@
   align-items: center;
   max-width: $navigation-width;
   margin: 0 auto;
-  padding-top: 14px;
 
   .navigation-item-container {
     text-align: center;
+    flex: 1;
     
     .navigation-item {
       @include font-primary-light;
@@ -20,6 +20,7 @@
       text-transform: uppercase;
       text-decoration: none;
       color: $color-text-white;
+      letter-spacing: 0.3px;
 
       &.selected,
       &:hover {
@@ -34,17 +35,17 @@
         }
       }
     }
+  }
+
+  .navigation-item-container-logo {
+    margin-top: 22px;
 
     .navigation-item-logo {
       font-size: 32px;
       text-transform: capitalize;
-      align-self: flex-start;
-      padding-top: 10px;
 
       .logo {
         display: block;
-        max-width: 50px;
-        max-height: 50px;
         margin: 0 auto;
         padding-bottom: 22px;
       }

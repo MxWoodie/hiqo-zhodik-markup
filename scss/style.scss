@@ -3,6 +3,7 @@
 @import "fonts";
 @import "variables";
 @import "mixins/fonts";
+@import "mixins/borders";
 @import "typography";
 
 // import components here
@@ -13,3 +14,8 @@
 @import "components/slider";
 @import "components/paralax";
 @import "components/blog";
+@import "components/section-delimiter";
+@import "components/portfolio";
+@import "components/about";
+@import "components/anchor";
+@import "components/footer";

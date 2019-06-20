@@ -1,0 +1,21 @@
+.anchor-top {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  background-color: $color-anchor-top;
+  right: 95px;
+  top: -20px;
+
+  .anchor-top-arrow {
+    position: absolute;
+    transform: rotate(45deg);
+    border-color: $color-text-white;
+    width: 10px;
+    height: 10px;
+    top: 8px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
