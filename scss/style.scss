@@ -2,8 +2,10 @@
 
 @import "fonts";
 @import "variables";
+@import "breakpoints";
 @import "mixins/fonts";
 @import "mixins/borders";
+@import "mixins/responsive";
 @import "typography";
 
 // import components here
