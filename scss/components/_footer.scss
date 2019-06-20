@@ -14,9 +14,11 @@
     margin-top: 60px;
 
     .footer-social-links {
-      display: flex;
-      justify-content: space-between;
-      width: 264px;
+
+      .footer-social {
+        display: inline-block;
+        margin-right: 37px;
+      }
     }
   }
 
@@ -28,7 +30,7 @@
     text-transform: capitalize;
     text-decoration: none;
     color: $color-text-white;
-    margin-left: 265px;
+    margin-left: 228px;
     margin-top: 22px;
     margin-bottom: 40px;
 
