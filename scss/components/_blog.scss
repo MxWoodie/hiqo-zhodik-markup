@@ -162,3 +162,76 @@
     }
   }
 }
+
+@include screen-medium {
+  .blog-header {
+    font-size: 35px;
+    padding-top: 40px;
+  
+    &::after {
+      width: 150px;
+      bottom: -15px;
+    }
+  }
+  
+  .blog-description {
+    padding: 30px 10px 0;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+  
+    &-firstline {
+      display: inline;
+    }
+  }
+  
+  .blog-posts-block {
+    position: relative;
+    margin: 0 auto;
+    padding: 50px 20px 0;
+  }
+  
+  .blog-posts-container {
+  
+    .blog-post {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+  
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+  
+      &:nth-child(2) {
+        margin: 0px;
+        margin-bottom: 20px;
+      }
+    }
+  
+    .post-description-container {
+      padding: 20px 20px 0;
+  
+      .post-title {
+        font-size: 22px;
+        line-height: 25px;
+        letter-spacing: 0.2px;
+      }
+  
+      .post-icons-container {
+  
+        .post-icon-item {
+          display: block;
+          margin-bottom: 5px;
+        }
+      }
+  
+      .post-description-text {
+        margin-top: 10px;
+        line-height: 22px;
+      }
+      
+      .post-button {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
