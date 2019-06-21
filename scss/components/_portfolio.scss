@@ -92,3 +92,38 @@
     }
   }
 }
+
+@include screen-medium {
+  .portfolio-container {
+    margin-top: 40px;
+  }
+  
+  .portfolio-header {
+    font-size: 35px;
+  }
+  
+  .portfolio-projects-container {
+    margin-top: 50px;
+
+    .portfolio-project {
+      display: block;
+      width: 100%;
+
+      &:nth-child(n+5) {
+        display: none;
+      }
+    }
+
+    .portfolio-button {
+      display: block;
+      border-color: $color-secondary;
+      color: $color-secondary;
+      font-size: 16px;
+      margin: 30px auto;
+
+      &:hover {
+        color: $color-text-white;
+      }
+    }
+  }
+}
