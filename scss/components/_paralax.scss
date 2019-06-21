@@ -137,3 +137,66 @@
     }
   }
 }
+
+@include screen-medium {
+  .paralax-container {
+
+    .paralax-header {
+      font-size: 35px;
+      padding-top: 50px;
+    }
+  
+    .paralax-description {
+      padding-top: 40px;
+    }
+  
+    .paralax-blockquote-container {
+      padding-top: 50px;
+      padding-left: 20px;
+      letter-spacing: 0;
+  
+      .paralax-blockquote-text {
+        font-size: 28px;
+        line-height: 38px;
+  
+        &::before {
+          font-size: 90px;
+          top: 220px;
+          left: 0;
+        }
+      }
+  
+      .paralax-blockquote-author {
+        font-size: 25px;
+        padding-top: 35px;
+        padding-bottom: 70px;
+      }
+    }
+  }
+  
+  .paralax-info-block {
+  
+    .paralax-info-container {
+      padding-top: 90px;
+      padding-bottom: 20px;
+      padding-left: 0;
+  
+      .paralax-info-item {
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+
+        .info-item-count {
+          color: $color-text-white;
+          margin-left: 28px;
+          font-size: 40px;
+        }
+  
+        .info-item-description {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
