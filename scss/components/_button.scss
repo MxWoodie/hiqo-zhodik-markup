@@ -14,4 +14,8 @@
     background-color: $color-secondary;
     border-color: $color-secondary;
   }
+
+  &.visible-medium {
+    display: none;
+  }
 }
