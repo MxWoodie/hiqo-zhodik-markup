@@ -113,7 +113,7 @@
         transform: rotate(135deg);
       }
       &:nth-child(3) {
-        display: none;
+        visibility: hidden;
       }
     }
   }
