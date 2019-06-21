@@ -7,7 +7,6 @@
   padding-top: 180px;
   padding-bottom: 60px;
   max-width: $page-width;
-  height: 100%;
   margin: 0 auto;
 
   .slider-container-text {
@@ -79,5 +78,45 @@
     &:hover {
       background-color: $color-text-white;
     }
+  }
+}
+
+@include screen-medium {
+  .slider-container {
+    padding-top: 60px;
+  
+    .slider-container-text {
+      padding: 0;
+      padding-left: 20px;
+  
+      .slider-header {
+        font-size: 50px;
+      }
+  
+      .slider-description {
+        letter-spacing: 0;
+        line-height: 1;
+        font-size: 30px;
+      }
+  
+      .slider-button {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+  
+      .slider-button + .slider-button {
+        margin-left: 0;
+      }
+    }
+  }
+  
+  .slider-svg {
+    width: 150px;
+    height: 30px;
+  }
+  
+  .pagination-container {
+    margin: 5px auto 0;
   }
 }
