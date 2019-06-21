@@ -19,3 +19,10 @@
     margin: auto;
   }
 }
+
+@include screen-medium {
+  .anchor-top {
+    top: -41px;
+    right: 0;
+  }
+}
