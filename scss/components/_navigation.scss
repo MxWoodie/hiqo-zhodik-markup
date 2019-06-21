@@ -80,7 +80,7 @@
   }
   
   .navigation-container {
-    position: relative;
+    position: absolute;
     flex-direction: column;
     height: 90vh;
     left: -100%;
@@ -90,6 +90,8 @@
   }
 
   .toggle-checkbox:checked ~ .navigation-container {
+    position: absolute;
+    z-index: 1;
     left: 0;
     width: 80%;
     box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
