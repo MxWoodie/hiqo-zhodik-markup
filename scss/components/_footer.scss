@@ -55,3 +55,42 @@
     }
   }
 }
+
+@include screen-medium {
+  .footer-container {
+  
+    .footer-content {
+      flex-direction: column;
+      padding: 30px 0 15px;
+  
+      .footer-social-block {
+        width: 100%;
+        margin: 0;
+  
+        .footer-social-links {
+          font-size: 0;
+  
+          .footer-social {
+            width: 20%;
+            margin: 0 0 50px;
+
+            .footer-social-img {
+              display: block;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+  
+      .footer-logo-container {
+        margin: 0 auto;
+      }
+  
+      .footer-copyright {
+        width: 100%;
+        margin: 20px 0 0;
+        text-align: center;
+      }
+    }
+  }
+}
