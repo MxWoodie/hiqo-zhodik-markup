@@ -109,6 +109,17 @@
       display: block;
       width: 100%;
 
+      .portfolio-project-actionbar-block {
+
+        &::before {
+          width: calc(50% - 35px);
+        }
+
+        .portfolio-project-actionbar-container {
+          padding-left: calc(50% + 35px);
+        }
+      }
+
       &:nth-child(n+5) {
         display: none;
       }
@@ -125,5 +136,5 @@
         color: $color-text-white;
       }
     }
-  }
+  } 
 }
