@@ -12,6 +12,7 @@
   .navigation-item-container {
     text-align: center;
     flex: 1;
+    padding-top: 22px;
     
     .navigation-item {
       @include font-primary-light;
@@ -38,7 +39,6 @@
   }
 
   .navigation-item-container-logo {
-    margin-top: 22px;
 
     .navigation-item-logo {
       font-size: 32px;
@@ -48,6 +48,72 @@
         display: block;
         margin: 0 auto;
         padding-bottom: 22px;
+      }
+    }
+  }
+}
+
+@include screen-medium {
+  .toggle-button-container {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 10px;
+
+    .toggle-button {
+      width: 30px;
+      height: 5px;
+      background-color: grey;
+      margin-bottom: 5px;
+      transition: all 0.4s;
+    }
+  }
+
+  .header-logo-small {
+    float: right;
+
+    .logo {
+      display: block;
+      margin: 0 auto;
+      padding-top: 10px;
+      padding-right: 10px;
+    }
+  }
+  
+  .navigation-container {
+    position: absolute;
+    flex-direction: column;
+    height: 90vh;
+    left: -100%;
+    background-color: $color-background-primary;
+    margin: 0;
+    transition: all 0.4s;
+  }
+
+  .toggle-checkbox:checked ~ .navigation-container {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    width: 80%;
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    transition: all 0.4s;
+  }
+
+  .toggle-checkbox:checked ~ .toggle-button-container {
+    .toggle-button {
+      transition: all 0.4s;
+
+      &:nth-child(1) {
+        position: relative;
+        top: 5px;
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        position: relative;
+        top: -5px;
+        transform: rotate(135deg);
+      }
+      &:nth-child(3) {
+        display: none;
       }
     }
   }

@@ -2,17 +2,27 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Expire</title>
 		<link rel="stylesheet" href="/assets/style.css" /></head>
 	<body>
 		<header class="page-header">
 			<div class="page-header-block">
 				<nav class="navigation-block">
+					<input id="toggle" class="toggle-checkbox hidden" type="checkbox">
+					<label class="toggle-button-container visible-medium" for="toggle">
+						<div class="toggle-button"></div>
+						<div class="toggle-button"></div>
+						<div class="toggle-button"></div>
+					</label>
+					<a class="header-logo-small visible-medium" href="#">
+							<img class="logo" src="assets/img/logo.png" alt="expire-logo" />
+					</a>
 					<ul class="navigation-container">
 						<li class="navigation-item-container"><a class="navigation-item selected" href="#">home</a></li>
 						<li class="navigation-item-container"><a class="navigation-item" href="#">portfolio</a></li>
 						<li class="navigation-item-container"><a class="navigation-item" href="#">blog</a></li>
-						<li class="navigation-item-container navigation-item-container-logo">
+						<li class="navigation-item-container navigation-item-container-logo hidden-medium">
 							<a class="navigation-item navigation-item-logo" href="#">
 								<img class="logo" src="assets/img/logo.png" alt="expire-logo" />
 								expire
