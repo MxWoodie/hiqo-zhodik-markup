@@ -26,3 +26,9 @@
     width: calc(50% - 13px);
   }
 }
+
+@include screen-medium {
+  .section-delimiter {
+    margin-top: 50px;
+  }
+}
