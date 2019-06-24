@@ -56,6 +56,32 @@
   }
 }
 
+@include screen-x-large {
+  .footer-container {
+  
+    .footer-content {
+      
+      .footer-social-block {
+        width: 30%;
+  
+        .footer-social-links {
+          font-size: 0;
+  
+          .footer-social {
+            width: 30%;
+            margin: 0 0 15px;
+          }
+        }
+      }
+  
+      .footer-copyright {
+        width: 30%;
+        text-align: center;
+      }
+    }
+  }
+}
+
 @include screen-medium {
   .footer-container {
   
