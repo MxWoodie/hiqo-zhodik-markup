@@ -74,14 +74,15 @@
       font-size: 30px;
       line-height: 40px;
       color: $color-text-white;
+      position: relative;
 
       &::before {
         content: "\201c";
         font-family: 'Times New Roman', Times, serif;
         position: absolute;
         font-size: 150px;
-        top: 342px;
-        left: 250px;
+        top: 20px;
+        left: -32px;
         opacity: 0.2;
         color: $color-text-white;
       }
@@ -137,6 +138,45 @@
   }
 }
 
+@include screen-x-large {
+  .paralax-info-block {
+    
+    .paralax-info-container {
+      padding-left: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      font-size: 0;
+  
+      .paralax-info-item {
+        float: left;
+        box-sizing: border-box;
+        width: 25%;
+  
+        .info-item-img {
+          float: left;
+        }
+        
+        .info-item-count {
+          @include font-primary-regular;
+          float: left;
+          color: $color-text-white;
+          margin-left: 28px;
+          font-size: 40px;
+        }
+  
+        .info-item-description {
+          @include font-primary-light;
+          color: $color-text-white;
+          font-size: 25px;
+          clear: both;
+          margin-top: 70px;
+          margin-left: 73px;
+        }
+      }
+    }
+  }
+}
+
 @include screen-medium {
   .paralax-container {
 
@@ -160,8 +200,8 @@
   
         &::before {
           font-size: 90px;
-          top: 220px;
-          left: 0;
+          top: 5px;
+          left: -10px;
         }
       }
   
