@@ -97,7 +97,7 @@
   .portfolio-projects-container {
   
     .portfolio-project {
-      width: 33%;
+      width: calc(100% / 3);
   
       .portfolio-project-actionbar-block {
         position: absolute;
