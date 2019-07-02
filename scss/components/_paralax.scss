@@ -23,7 +23,6 @@
     border-top: 30px solid $color-background-paralax;
     border-left: 30px solid transparent;
     height: 0;
-    z-index: 1;
     width: 50%;
   }
 }
@@ -75,14 +74,15 @@
       font-size: 30px;
       line-height: 40px;
       color: $color-text-white;
+      position: relative;
 
       &::before {
         content: "\201c";
         font-family: 'Times New Roman', Times, serif;
         position: absolute;
         font-size: 150px;
-        top: 342px;
-        left: 250px;
+        top: 20px;
+        left: -32px;
         opacity: 0.2;
         color: $color-text-white;
       }
@@ -138,6 +138,15 @@
   }
 }
 
+@include screen-x-large {
+  .paralax-info-block {
+    
+    .paralax-info-container {
+      padding-left: 20px;
+    }
+  }
+}
+
 @include screen-medium {
   .paralax-container {
 
@@ -161,8 +170,8 @@
   
         &::before {
           font-size: 90px;
-          top: 220px;
-          left: 0;
+          top: 5px;
+          left: -10px;
         }
       }
   
@@ -175,14 +184,19 @@
   }
   
   .paralax-info-block {
-  
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
     .paralax-info-container {
       padding-top: 90px;
       padding-bottom: 20px;
       padding-left: 0;
   
       .paralax-info-item {
-        float: none;
         width: 100%;
         padding-left: 50px;
         margin-bottom: 50px;

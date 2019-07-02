@@ -54,6 +54,13 @@
 }
 
 @include screen-medium {
+  .page-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+
   .toggle-button-container {
     display: inline-block;
     padding-top: 10px;
@@ -82,7 +89,7 @@
   .navigation-container {
     position: absolute;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
     left: -100%;
     background-color: $color-background-primary;
     margin: 0;
@@ -91,10 +98,9 @@
 
   .toggle-checkbox:checked ~ .navigation-container {
     position: absolute;
-    z-index: 1;
     left: 0;
     width: 80%;
-    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 10px 8px 5px 0 rgba(0, 0, 0, 0.2);
     transition: all 0.4s;
   }
 
